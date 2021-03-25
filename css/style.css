@@ -637,6 +637,9 @@ body{
 
 .form {
   display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100%;
   background-color: rgb(0 0 0 / 60%);
@@ -651,7 +654,6 @@ body{
 .popup {
   position: relative;
   max-width: 390px;
-  margin: 2% auto;
   background-color: #ffffff;
   padding: 54px 30px 54px 30px;
   display: flex;
@@ -827,7 +829,7 @@ body{
   .box_row:nth-child(2) {
     margin-left: 35px;
   } 
-
+  
   .form-x {
     width: 28px;
     height: 28px;
