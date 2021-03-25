@@ -672,7 +672,7 @@ body{
 }
 
 .popup-title {
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   padding-top: 0;
 }
 
@@ -978,6 +978,10 @@ body{
 
   .box-btn {
     width: 39%;
+  }
+
+  .popup {
+    padding: 30px 26px;
   }
 
   .form-x {
