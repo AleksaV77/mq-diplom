@@ -820,7 +820,7 @@ body{
   }
 
   .box_row:last-child {
-    margin: 58px 50% 0 0;
+    margin: 9% 52% 0 0;
   }
 
   .box_row:nth-child(2) {
@@ -961,7 +961,7 @@ body{
   }
 
   .box_row_img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .box_row_content {
