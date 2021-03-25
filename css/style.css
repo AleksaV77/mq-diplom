@@ -912,6 +912,10 @@ body{
     width: 100%;
   }
 
+  .aside-title {
+    margin-top: 45px;
+  }
+
   .article {
     display: flex;
     flex-direction: column;
@@ -923,7 +927,7 @@ body{
     width: 100%;
     height: 3px;
     border-bottom: solid;
-    color: #e1d9bd;
+    color: #ededed;
     display: block;
     margin-top: 15px;
     margin-right: auto;
