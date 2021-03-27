@@ -410,7 +410,7 @@ body{
   background-color: #b59f5b;
   border: none;
   width: 270px;
-  height: 50px;
+  height: 48px;
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 14px;
@@ -655,29 +655,34 @@ body{
   position: relative;
   max-width: 390px;
   background-color: #ffffff;
-  padding: 54px 30px 54px 30px;
+  padding: 3.5% 2.5%;
   display: flex;
   flex-wrap: wrap;
 }
 
 .form-x {
   background-image: url(../svg/form-x.svg);
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: none;
   background-color: #80808000;
   position: absolute;
-  top: -20px;
+  top: -25px;
   right: 0;
 }
 
 .popup-title {
-  margin: 0 auto 30px;
+  margin: 0 auto 7%;
   padding-top: 0;
+  font-size: 20px;
+}
+
+.popup-title::after {
+  margin-top: 5px;
 }
 
 .form-popup-text {
-  margin-bottom: 34px;
+  margin-bottom: 5%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -689,7 +694,6 @@ body{
 .popup-text {
   width: 100%;
   margin-bottom: 10px;
-  line-height: 1.6;
 }
 
 .field {
@@ -736,7 +740,7 @@ body{
 
 .popup-textarea {
   width: 100%;
-  max-height: 130px;
+  max-height: 105px;
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-left: 25px;
@@ -749,6 +753,7 @@ body{
 
 .form-popup-btn {
   width: 100%;
+  font-size: 12px;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -831,9 +836,8 @@ body{
   } 
   
   .form-x {
-    width: 28px;
-    height: 28px;
-    top: -30px;
+    width: 27px;
+    height: 27px;
   }
 }
 
@@ -981,12 +985,16 @@ body{
   }
 
   .popup {
-    padding: 30px 26px;
+    width: 90%;
+  }
+
+  .popup-title {
+    font-size: 16px;
   }
 
   .form-x {
     width: 24px;
     height: 24px;
-    top: -30px;
+    top: -25px;
   }
 }
