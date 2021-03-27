@@ -163,10 +163,10 @@ body{
 .trend-link-text {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 13% 17%;
+  margin: 0 10% 17%;
   margin-top: auto;
   outline: 3px solid #918153;
-  outline-offset: 25px;
+  outline-offset: 20px;
   z-index: 1;
   height: fit-content;
 }
@@ -682,6 +682,7 @@ body{
   margin: 0 auto 7%;
   padding-top: 0;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .form-title::after {
@@ -1027,7 +1028,7 @@ body{
   }
 }
 
-@media (orientation: landscape) and (max-width: 1200px) and (min-width: 641px) and (orientation: landscape)  {
+@media (orientation: landscape) and (max-width: 1200px) and (min-width: 641px) {
   .trends {
     flex-wrap: nowrap;
   }
