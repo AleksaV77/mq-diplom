@@ -634,9 +634,11 @@ body{
 }
 
 /*POPUP*/
-
-.form {
+.popup_hidden {
   display: none;
+}
+
+.popup {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -651,7 +653,7 @@ body{
   font-size: 13px;
 }
 
-.popup {
+.form {
   position: relative;
   max-width: 390px;
   background-color: #ffffff;
@@ -671,13 +673,13 @@ body{
   right: 0;
 }
 
-.popup-title {
+.form-title {
   margin: 0 auto 7%;
   padding-top: 0;
   font-size: 20px;
 }
 
-.popup-title::after {
+.form-title::after {
   margin-top: 5px;
 }
 
@@ -776,10 +778,6 @@ body{
 
   .trends {
     flex-wrap: wrap;
-  }
-
-  .trend {
-    width: 48%;
   }
 
   .trend:nth-child(1n+3) {
@@ -892,7 +890,7 @@ body{
   }
 
   .trend-link-text {
-    margin: 25% 13% 10%;
+    margin: 25% 13% 15%;
     height: fit-content;
   }
   
@@ -961,6 +959,12 @@ body{
     padding: 45px 50px 0;
   }
 
+  .widget-title,
+  .tags,
+  .list {
+    padding-top: 33px;
+  }
+
   .box_row_content_title {
     font-size: 16px;
   }
@@ -984,11 +988,11 @@ body{
     width: 39%;
   }
 
-  .popup {
+  .form {
     width: 90%;
   }
 
-  .popup-title {
+  .form-title {
     font-size: 16px;
   }
 
@@ -996,5 +1000,45 @@ body{
     width: 24px;
     height: 24px;
     top: -25px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 640px) {
+  .trends {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .trend {
+    margin-left: 4px;
+    height: auto;
+  }
+
+  .trend:nth-child(3) {
+    margin-left: 0;
+    margin-bottom: 0;
+    height: auto;
+  }
+
+  .trend-link-text {
+    height: auto;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 1200px) and (min-width: 641px) and (orientation: landscape)  {
+  .trends {
+    flex-wrap: nowrap;
+  }
+
+  .trend:nth-child(1n+2) {
+    margin-left: 4px;
+  }
+
+  .trend:nth-child(1n+3) {
+    margin-top: 0;
+  }
+
+  .trend-link-text {
+    outline-offset: 5px;
   }
 }
