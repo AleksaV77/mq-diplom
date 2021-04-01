@@ -4,7 +4,7 @@ body{
 
 @font-face {
   font-family: Open Sans;
-	src: url(../fonts/OpenSans-bold.woff);
+	src: url(../fonts/OpenSans-Bold.woff);
 	font-weight: 700;
 	font-style: normal;
 }
@@ -17,11 +17,11 @@ body{
 }
 
 .header {
-  max-width: 1660px;
   background-image: url(../images/banner-bg.jpg);
   background-size: cover;
   position: relative;
   z-index: 1;
+  min-width: 100%;
 }
 
 .header::after {
@@ -84,7 +84,7 @@ body{
 }
 
 .header-title {
-  width: 680px;
+  max-width: 680px;
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 45px;
@@ -96,11 +96,7 @@ body{
   padding-bottom: 145px;
 }
 
-/*TRENGS*/
-
-.section-trends {
-  max-width: 1660px;
-}
+/*TRENDS*/
 
 .trends-title,
 .popup-title {
@@ -119,6 +115,8 @@ body{
 }
 
 .trend {
+  box-sizing: border-box;
+  padding: 0 25px 15px;
   position: relative;
   flex: 1 1 35%;
   display: flex;
@@ -163,10 +161,9 @@ body{
 .trend-link-text {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 10% 17%;
+  padding: 8%;
   margin-top: auto;
-  outline: 3px solid #918153;
-  outline-offset: 20px;
+  border: 3px solid #918153;
   z-index: 1;
   height: fit-content;
 }
@@ -795,7 +792,6 @@ body{
   }
 
   .content {
-    max-width: 768px;
     padding: 50px 35px 0;
   }
 
@@ -890,14 +886,11 @@ body{
   .trend {
     margin-bottom: 4px;
     margin-left: 0;
+    padding: 28% 4% 6%;
   }
 
   .trend:last-child {
     margin-bottom: 0;
-  }
-
-  .trend-link-text {
-    margin: 25% 10% 15%;
   }
 
   .trend-link-item {
@@ -1014,6 +1007,7 @@ body{
   .trend {
     margin-left: 4px;
     height: 245px;
+    padding-top: 0;
   }
 
   .trend:nth-child(3) {
