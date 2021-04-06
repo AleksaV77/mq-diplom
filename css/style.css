@@ -212,6 +212,7 @@ body{
 }
 
 .article-image {
+  width: 100%;
   max-width: 380px;
 }
 
@@ -833,7 +834,16 @@ body{
 
   .box_row:nth-child(2) {
     margin-left: 35px;
-  } 
+  }
+  
+  .box_row_img {
+    max-width: 100%;
+  }
+
+  .box_row_content {
+    width: 90%;
+    height: 60%;
+  }
   
   .form-x {
     width: 27px;
